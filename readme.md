@@ -3,12 +3,17 @@ esercizio di oggi: OOP Shop
 nome repo: php-oop-2
 
 Immaginare quali sono le classi necessarie per creare uno shop online con le seguenti caratteristiche:
-L'e-commerce vende prodotti per animali.
 
+L'e-commerce vende prodotti per animali.
 I prodotti sono categorizzati, le categorie sono Cani o Gatti.
 I prodotti saranno oltre al cibo, anche giochi, cucce, etc.
 
 Stampiamo delle card contenenti i dettagli dei prodotti, come immagine, titolo, prezzo, icona della categoria ed il tipo di articolo che si sta visualizzando (prodotto, cibo, gioco, cuccia).
+
+Svolgimento:
+- Creo all'interno del tag php una class Prodotti e gli assegno i valori nome, immagine, descrizione, prezzo, 
+- Creo le sottoclassi di prodotti contente i valori di cibo, gioco, cuccia.
+- Creo la sottoclasse di cane o gatto (?)
 
 BONUS:
 Definite una proprietà privata ed un metodo privato all'interno di una classe, assegnategli un valore e mostratelo nelle card (ricordatevi dell'esempio del codice prodotto visto a lezione).
