@@ -1,5 +1,5 @@
 <?php 
-    // Classse padre dei prodotti
+    // Definizione classe padre Prodotti
     class Prodotti{
         public $nome;
         public $immagine;
@@ -14,8 +14,18 @@
             $this->prezzo = $_prezzo;
             $this->disponibilità = $_disponibilità;
         }
+    }
 
-        
+    // Definizione classe Cibi ereditiera della classe Prodotti 
+    class Cibo extends Prodotti{
+        public $ingredienti;
+        public $proteine;
+
+        public function __construct($_nome, $_immagine, $_descrizione, $_prezzo, $_disponibilità, $ingredienti, $proteine){
+            parent::__construct($_nome, $_immagine, $_descrizione, $_prezzo, $_disponibilità);
+            $this->ingredienti = $_ingredienti;
+            $this->proteine = $_proteine;
+        }
     }
 
 
