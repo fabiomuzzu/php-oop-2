@@ -18,6 +18,7 @@ Svolgimento:
 
 BONUS:
 Definite una proprietà privata ed un metodo privato all'interno di una classe, assegnategli un valore e mostratelo nelle card (ricordatevi dell'esempio del codice prodotto visto a lezione).
+
 Ecco le informazioni sui prodotti da mostrare
 
 Royal Canin Mini Adult

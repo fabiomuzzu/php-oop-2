@@ -16,6 +16,15 @@
         }
     }
 
+    // Definizione classe Genere per gli animali
+    class Genere{
+        public $genere;
+
+        function __construct($_genere){
+            $this->genere = $_genere;
+        }
+    }
+
     // Definizione classe Cibi ereditiera della classe Prodotti 
     class Cibo extends Prodotti{
         public $ingredienti;
@@ -50,6 +59,11 @@
         }
     }
 
+    // Definizione dei generi di animale
+    $cane = new Genere('cane');
+    $gatto = new Genere('gatto');
+    $pesce = new Genere('pesce');
+    $uccello = new Genere('uccello');
 ?>
 
 <!DOCTYPE html>
