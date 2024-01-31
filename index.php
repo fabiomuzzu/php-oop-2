@@ -77,8 +77,8 @@
     ];
     $articoliAccessori = 
     [
-        new Accessori('Voliera Wilma in Legno', 'https://arcaplanet.vtexassets.com/arquivos/ids/258384/voliera-wilma1.jpg', 'Voliera per uccelli', 3, 'Non disponibile', $uccello, 'Alta'),
-        new Accessori('Cartucce Filtranti per Filtro EasyCrystal', 'https://arcaplanet.vtexassets.com/arquivos/ids/272741/tetra-easycrystal-filterpack-250-300.jpg', 'Filtro per acquari', 19, 'Disponibile', $pesce, 'Obbligatoria la sostiutizone ogni 3 mesi'),
+        new Accessori('Voliera Wilma in Legno', 'https://arcaplanet.vtexassets.com/arquivos/ids/258384/voliera-wilma1.jpg', 'Voliera per uccelli', 3, 'Non disponibile', $uccello, 'Consigliata per i volatili di piccola/media taglia'),
+        new Accessori('Cartucce Filtranti per Filtro EasyCrystal', 'https://arcaplanet.vtexassets.com/arquivos/ids/272741/tetra-easycrystal-filterpack-250-300.jpg', 'Filtro per acquari', 19, 'Disponibile', $pesce, 'Obbligatoria la sostituzione ogni 3 mesi'),
     ];
 
 ?>
@@ -94,8 +94,10 @@
 <body>
     <div class="container">
         <div class="row">
+
+            <!-- Print dell'array degli articoli di cibo -->
             <?php foreach($articoliCibo as $item) { ?>
-                <div class="col-3">
+                <div class="col-3 py-2">
                     <div class="card" style="width: 18rem;">
                         <img src="<?php echo $item->immagine ?>" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -107,6 +109,44 @@
                             <li class="list-group-item"><?php echo $item->genere->genere ?></li>
                             <li class="list-group-item"><?php echo $item->disponibilita ?></li>
                             <li class="list-group-item"><?php echo $item->proteine ?></li>
+                        </ul>
+                    </div>
+                </div>
+            <?php } ?>
+
+            <!-- Print dell'array degli articoli giochi -->
+            <?php foreach($articoliGiochi as $item) { ?>
+                <div class="col-3 py-2">
+                    <div class="card" style="width: 18rem;">
+                        <img src="<?php echo $item->immagine ?>" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $item->nome ?></h5>
+                            <p class="card-text"><?php echo $item->descrizione ?></p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><?php echo '€'.$item->prezzo ?></li>
+                            <li class="list-group-item"><?php echo $item->genere->genere ?></li>
+                            <li class="list-group-item"><?php echo $item->disponibilita ?></li>
+                            <li class="list-group-item"><?php echo $item->materiale ?></li>
+                        </ul>
+                    </div>
+                </div>
+            <?php } ?>
+
+            <!-- Print dell'array degli articoli accessori -->
+            <?php foreach($articoliAccessori as $item) { ?>
+                <div class="col-3 py-2">
+                    <div class="card" style="width: 18rem;">
+                        <img src="<?php echo $item->immagine ?>" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $item->nome ?></h5>
+                            <p class="card-text"><?php echo $item->descrizione ?></p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><?php echo '€'.$item->prezzo ?></li>
+                            <li class="list-group-item"><?php echo $item->genere->genere ?></li>
+                            <li class="list-group-item"><?php echo $item->disponibilita ?></li>
+                            <li class="list-group-item"><?php echo $item->necessita ?></li>
                         </ul>
                     </div>
                 </div>
