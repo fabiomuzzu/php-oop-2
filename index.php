@@ -5,14 +5,14 @@
         public $immagine;
         public $descrizione;
         public $prezzo;
-        public $disponibilità;
+        public $disponibilita;
 
-        public function __construct($_nome, $_immagine, $_descrizione, $_prezzo, $_disponibilità){
+        public function __construct($_nome, $_immagine, $_descrizione, $_prezzo, $_disponibilita){
             $this->nome = $_nome;
             $this->immagine = $_immagine;
             $this->descrizione = $_descrizione;
             $this->prezzo = $_prezzo;
-            $this->disponibilità = $_disponibilità;
+            $this->disponibilita = $_disponibilita;
         }
     }
 
@@ -21,13 +21,34 @@
         public $ingredienti;
         public $proteine;
 
-        public function __construct($_nome, $_immagine, $_descrizione, $_prezzo, $_disponibilità, $ingredienti, $proteine){
-            parent::__construct($_nome, $_immagine, $_descrizione, $_prezzo, $_disponibilità);
+        public function __construct($_nome, $_immagine, $_descrizione, $_prezzo, $_disponibilita, $ingredienti, $proteine){
+            parent::__construct($_nome, $_immagine, $_descrizione, $_prezzo, $_disponibilita);
             $this->ingredienti = $_ingredienti;
             $this->proteine = $_proteine;
         }
     }
 
+    // Definizione classe Giochi ereditiera della classe Prodotti 
+    class Giochi extends Prodotti{
+        public $materiale;
+        public $dimensione;
+
+        public function __construct($_nome, $_immagine, $_descrizione, $_prezzo, $_disponibilita, $materiale, $dimensione){
+            parent::__construct($_nome, $_immagine, $_descrizione, $_prezzo, $_disponibilita);
+            $this->materiale = $_materiale;
+            $this->dimensione = $_dimensione;
+        }
+    }
+
+    // Definizione classe Accessori ereditiera della classe Prodotti 
+    class Accessori extends Prodotti{
+        public $necessita;
+
+        public function __construct($_nome, $_immagine, $_descrizione, $_prezzo, $_disponibilita, $necessita){
+            parent::__construct($_nome, $_immagine, $_descrizione, $_prezzo, $_disponibilita);
+            $this->necessita = $_necessita;
+        }
+    }
 
 ?>
 

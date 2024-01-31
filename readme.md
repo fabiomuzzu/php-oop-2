@@ -13,7 +13,7 @@ Una volta create le classi che descrivono il nostro sistema, instanziate prima t
 
 Svolgimento:
 - Creo all'interno del tag php una class Prodotti e gli assegno i valori nome, immagine, descrizione, prezzo, disponibilità
-- Creo le sottoclassi di prodotti contente i valori di cibo, gioco, cuccia.
+- Creo le sottoclassi di prodotti contente i valori di cibo, gioco, accessori.
 - Creo le categorie di cane o gatto tramite l'incapsulamento
 
 BONUS:
