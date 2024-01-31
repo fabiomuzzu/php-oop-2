@@ -11,7 +11,7 @@ I prodotti saranno oltre al cibo, anche giochi, cucce, etc.
 Stampiamo delle card contenenti i dettagli dei prodotti, come immagine, titolo, prezzo, icona della categoria ed il tipo di articolo che si sta visualizzando (prodotto, cibo, gioco, cuccia).
 
 Svolgimento:
-- Creo all'interno del tag php una class Prodotti e gli assegno i valori nome, immagine, descrizione, prezzo, 
+- Creo all'interno del tag php una class Prodotti e gli assegno i valori nome, immagine, descrizione, prezzo, disponibilità
 - Creo le sottoclassi di prodotti contente i valori di cibo, gioco, cuccia.
 - Creo la sottoclasse di cane o gatto (?)
 
